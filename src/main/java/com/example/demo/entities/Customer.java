@@ -59,8 +59,7 @@ public class Customer {
 
     @Column(name="status")
     private String status;
-  //@OneToMany(targetEntity = Policy.class, cascade=CascadeType.ALL)
-//  @JoinColumn (name="cust_Id" ,referencedColumnName = "customerId")
+  
  @ManyToMany(cascade=CascadeType.ALL)
   @JoinTable(name="customer_policies",joinColumns=@JoinColumn(name="cust_id"),inverseJoinColumns=@JoinColumn(name="polic_id"))
 
