@@ -63,7 +63,8 @@ public class Customer {
 //  @JoinColumn (name="cust_Id" ,referencedColumnName = "customerId")
  @ManyToMany(cascade=CascadeType.ALL)
   @JoinTable(name="customer_policies",joinColumns=@JoinColumn(name="cust_id"),inverseJoinColumns=@JoinColumn(name="polic_id"))
-  //@ManyToOne(cascade=CascadeType.ALL)
+
+ //@ManyToOne(cascade=CascadeType.ALL)
   //@JoinColumn(name="cust_id")
    private List<Policy> policies;
 

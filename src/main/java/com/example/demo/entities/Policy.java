@@ -30,6 +30,7 @@ public class Policy {
     }
 
     //@OneToMany(targetEntity = Customer.class, cascade=CascadeType.ALL)
+
     //@JoinColumn (name="policy_Id" ,referencedColumnName = "policyId")
   // private List<Customer> customers;
    //@ManyToOne(cascade=CascadeType.ALL)

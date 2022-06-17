@@ -102,22 +102,6 @@ public class CustomerServiceImpl implements CustomerService {
        // this.policyRepository = policyRepository;
    // }
 
- /*  @Override
-    public void updateCustomer(Customer customer, int customerId) {
-        list= list.stream().map(c-> {
-
-            if (c.getCustomerId() == customerId) {
-                c.setPolicyPremiumAmount(customer.getPolicyPremiumAmount());
-            }
-            return c;
-        }
-
-
-                ;}*/
-
-
-
-
 }
 
 
