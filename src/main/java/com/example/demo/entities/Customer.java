@@ -59,12 +59,11 @@ public class Customer {
 
     @Column(name="status")
     private String status;
-  
+
  @ManyToMany(cascade=CascadeType.ALL)
   @JoinTable(name="customer_policies",joinColumns=@JoinColumn(name="cust_id"),inverseJoinColumns=@JoinColumn(name="polic_id"))
 
- //@ManyToOne(cascade=CascadeType.ALL)
-  //@JoinColumn(name="cust_id")
+
    private List<Policy> policies;
 
     public Customer(int customerId, String s, String s1, String s2, String s3, String john, String dob, String male, String s4, String contactNumber, String pune, String policyPayPeriod, String creationDate, String updateDate, String policyRenewalPeriod, String ok) {

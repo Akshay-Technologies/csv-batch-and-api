@@ -13,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 @EnableSwagger2
-//@Import(SpringDataRestConfiguration.class)
+
 @Configuration
 public class SpringFoxConfig{
     @Bean
@@ -27,12 +27,5 @@ public class SpringFoxConfig{
     }
     //URL-http://localhost:9090/swagger-ui/index.html
 
-   /* @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
 
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }*/
 }
