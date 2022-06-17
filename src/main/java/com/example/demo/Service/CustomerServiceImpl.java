@@ -98,10 +98,7 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepository.saveAll(listOfCustomer);
          return "policy premium amount updated successfully by 10000";
     }
-    //public CustomerServiceImpl(PolicyRepository policyRepository) {
-       // this.policyRepository = policyRepository;
-   // }
-
+ 
 }
 
 
