@@ -24,28 +24,7 @@ public interface CustomerService {
     public String updatePolicyPremiumAmount();
 
 
-
-    /*  @Override
-          public List<Customer> updateCustomer(Customer customer, int customerId) {
-              // list= list.stream().map(c->{
-              for (Customer c : customer) {
-
-                  if (c.getCustomerId() == customerId) {
-                      c.setPolicyPremiumAmount(customer.getPolicyPremiumAmount());
-                  }
-                  return c;
-              }
-
-              // if(c.getCustomerId()==customerId){
-              //     c.setPolicyPremiumAmount(customer.getPolicyPremiumAmount());
-              //  }
-              //  return c;
-
-              //  }).collect(Collectors.toList());
-
-
-              return customer;
-          }
+   
 
     // void updateCustomer(Customer customer, int customerId);
 
