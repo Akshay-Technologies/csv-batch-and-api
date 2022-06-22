@@ -27,7 +27,6 @@ public class JobController {
     private JobLauncher jobLauncher;
     @Autowired
     private Job job;
-
     @Autowired
     private CustomerRepository customerRepository;
     @Autowired
@@ -40,7 +39,6 @@ public class JobController {
     public void csvToDbJob() {
         JobParameters jobParameters = new JobParametersBuilder()
                 .addLong("startAt", System.currentTimeMillis()).toJobParameters();
-
         try {
             jobLauncher.run(job, jobParameters);
         } catch (JobExecutionAlreadyRunningException | JobRestartException | JobInstanceAlreadyCompleteException |
@@ -75,12 +73,7 @@ public class JobController {
     }
 
 
-    ///2. Get course by Id  "/courses/{courseId}"
-    /*@GetMapping("/customers/{groupId}")
-    public Customer getCustomers( @PathVariable String groupId) {
-        return this.CustomerSerivice.getCustomers( Integer.parseInt(groupId));
-    }*/
-    //delete by creation date =2015
+//delete by creation date =2015
     @DeleteMapping("/Delete/{id}")
     public String DeleteCustomer(@PathVariable int id) {
         return CustomerSerivice.deleteById(id);
@@ -98,12 +91,10 @@ public class JobController {
         return this.customerRepository.getJoinInformation();
     }
 
-  /*@PutMapping( "/update/{customerId}")
-    public List<Customer> updateCustomer(@RequestBody Customer customer, @PathVariable("customerId") int customerId) {
-      return this.CustomerSerivice.updateCustomer(customer, customerId);
 
 
-  }*/
+
+
 
   @PostMapping("/count")
   public String updateCustomerPolicyCount() {

@@ -98,26 +98,7 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepository.saveAll(listOfCustomer);
          return "policy premium amount updated successfully by 10000";
     }
-    //public CustomerServiceImpl(PolicyRepository policyRepository) {
-       // this.policyRepository = policyRepository;
-   // }
-
- /*  @Override
-    public void updateCustomer(Customer customer, int customerId) {
-        list= list.stream().map(c-> {
-
-            if (c.getCustomerId() == customerId) {
-                c.setPolicyPremiumAmount(customer.getPolicyPremiumAmount());
-            }
-            return c;
-        }
-
-
-                ;}*/
-
-
-
-
+ 
 }
 
 

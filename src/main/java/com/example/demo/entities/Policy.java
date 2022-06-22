@@ -29,12 +29,7 @@ public class Policy {
     public Policy(int policyId, String s, String s1, String s2, String policyName, String lifeLongPolicy, String policyType, String lifeInsurance) {
     }
 
-    //@OneToMany(targetEntity = Customer.class, cascade=CascadeType.ALL)
-    //@JoinColumn (name="policy_Id" ,referencedColumnName = "policyId")
-  // private List<Customer> customers;
-   //@ManyToOne(cascade=CascadeType.ALL)
-   //@JoinColumn
-  //private Customer customer;
+
     public Integer getPolicyId() {
         return policyId;
     }

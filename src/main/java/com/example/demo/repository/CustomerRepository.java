@@ -31,8 +31,6 @@ List<Customer> findByPolicyId(int policyId);
     List<Policy> getAllPolicy();
     }
 
-  // @Query("from Customer where set groupId=:groupId AND officeId=:officeId AND branchId=:branchId AND policyCount>=10 FROM Customer c JOIN c.policies p")
-  //  public List<Customer>updateCustomer();
 
 
 
