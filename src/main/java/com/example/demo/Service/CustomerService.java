@@ -42,7 +42,4 @@ public interface CustomerService {
               }
               return null;
           }*/
-   //public List<Customer> updateCustomer(policyPremiumAmount);
-
-    // public List<Customer> updateById(int customerId);
 }
